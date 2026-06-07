@@ -339,6 +339,15 @@ statCards.forEach((card) => {
   });
 });
 
+// Load Header
+fetch("header.html")
+  .then((response) => response.text())
+  .then((html) => {
+    const headerPlaceholder = document.createElement("div");
+    headerPlaceholder.innerHTML = html;
+    document.body.prepend(headerPlaceholder);
+  })
+  .catch((error) => console.error("Error loading header:", error));
 
 // Load Footer
 fetch("footer.html")

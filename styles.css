@@ -74,6 +74,12 @@ a {
     conic-gradient(from 120deg, var(--moss), var(--canopy), var(--water), var(--moss));
 }
 
+.brand-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+}
+
 nav {
   display: flex;
   gap: 4px;
@@ -1043,7 +1049,7 @@ figcaption {
 
 .species-card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 22px;
 }
 
