@@ -45,7 +45,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="section-heading reveal">
           <h2>When vegetation is removed, the impacts spread</h2>
           <p>
@@ -68,12 +68,6 @@
             <p>Roots hold soil together. When vegetation is cleared, erosion increases during heavy rain and land becomes more vulnerable.</p>
           </div>
           <div class="impact-card reveal">
-            <img src="Images/Impacts/Habitat Destroyed.jpg" alt="Habitat destroyed impact">
-            <span class="impact-icon habitat"></span>
-            <strong>Habitat is destroyed</strong>
-            <p>Native plants and animals lose food, shelter, nesting areas, and safe movement corridors.</p>
-          </div>
-          <div class="impact-card reveal">
             <img src="Images/Impacts/Increased Heat Risk.jpg" alt="Increased heat risk impact">
             <span class="impact-icon leaf"></span>
             <strong>Heat risk increases</strong>
@@ -86,7 +80,7 @@
             <p>Less vegetation means less carbon storage, less rainfall absorption, and greater flood pressure in low-lying areas.</p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="section split personal">
         <div class="section-copy reveal">
@@ -105,9 +99,9 @@
         </div>
         <div class="quote-card reveal">
           <p>
-            Healthy vegetation protects communities before a disaster happens.
+            Trees are amazing helpers before, during and after natural disasters like storms, fires or floods. They don't just survive tough times — they help keep our communities safer and stronger.
           </p>
-          <span>Key message</span>
+          <span> - Arbor Day Foundation</span>
         </div>
       </section>
 
@@ -132,6 +126,128 @@
           <span>04</span>
           <h2>Reduced resilience</h2>
           <p>Less carbon storage, more erosion, and less shade increase climate vulnerability.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading centered reveal">
+          <h2>Environmental Impact Statistics</h2>
+          <p>Click on a statistic to learn more about the impact</p>
+        </div>
+
+        <div class="statistics-explorer reveal">
+          <div class="stats-grid">
+            <div class="stat-card" data-stat="species">
+              <span class="stat-number">75%</span>
+              <h3>Indigenous species threatened</h3>
+              <p class="stat-detail">Approximately 75% of indigenous species are classified as threatened due to habitat loss and environmental degradation.</p>
+            </div>
+
+            <div class="stat-card" data-stat="endangered">
+              <span class="stat-number">4,000</span>
+              <h3>Native species endangered</h3>
+              <p class="stat-detail">Over 4,000 native species are endangered, primarily due to habitat loss from vegetation clearing.</p>
+            </div>
+
+            <div class="stat-card" data-stat="heat">
+              <span class="stat-number">10°C</span>
+              <h3>Urban heat island effect</h3>
+              <p class="stat-detail">Less tree cover leads to hotter urban areas, with temperatures up to 10°C higher than surrounding vegetated areas.</p>
+            </div>
+
+            <div class="stat-card" data-stat="sediment">
+              <span class="stat-number">182M</span>
+              <h3>Tonnes of sediment in waterways</h3>
+              <p class="stat-detail">182 million tonnes of sediment entered waterways in 2022, reducing water quality and harming aquatic ecosystems.</p>
+            </div>
+
+            <div class="stat-card" data-stat="runoff">
+              <span class="stat-number">5x</span>
+              <h3>More stormwater runoff</h3>
+              <p class="stat-detail">Urban areas generate 5x more stormwater runoff than forests, leading to faster flooding and water pollution.</p>
+            </div>
+
+            <div class="stat-card" data-stat="flooding">
+              <span class="stat-number">8x</span>
+              <h3>More severe flooding</h3>
+              <p class="stat-detail">Vegetation loss contributes to 8x more severe flooding events in affected areas.</p>
+            </div>
+
+            <div class="stat-card" data-stat="wetlands">
+              <span class="stat-number">25%</span>
+              <h3>Flood peak reduction by wetlands</h3>
+              <p class="stat-detail">Wetlands can reduce flood peaks by 10–25% and store up to 30% of excess water during heavy rainfall.</p>
+            </div>
+
+            <div class="stat-card" data-stat="carbon">
+              <span class="stat-number">↓</span>
+              <h3>Reduced carbon absorption</h3>
+              <p class="stat-detail">Less vegetation means fewer carbon sinks, with trees and forests no longer regulating atmospheric carbon effectively.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading centered reveal">
+          <h2>Human Activity → Vegetation Impact Explorer</h2>
+          <p>Click on a human activity to see its impact on vegetation</p>
+        </div>
+
+        <div class="cause-impact-explorer reveal">
+          <div class="cause-panel">
+            <button class="cause-button active" data-cause="land-clearance">
+              <span class="cause-icon">🌳</span>
+              Land clearance
+            </button>
+            <button class="cause-button" data-cause="urban-expansion">
+              <span class="cause-icon">🏙️</span>
+              Urban expansion
+            </button>
+            <button class="cause-button" data-cause="agriculture">
+              <span class="cause-icon">🌾</span>
+              Agriculture intensification
+            </button>
+            <button class="cause-button" data-cause="pollution">
+              <span class="cause-icon">💧</span>
+              Pollution runoff
+            </button>
+            <button class="cause-button" data-cause="infrastructure">
+              <span class="cause-icon">🛣️</span>
+              Infrastructure development
+            </button>
+          </div>
+
+          <div class="impact-panel">
+            <div class="impact-content" id="impactContent">
+              <h3 id="impactTitle">Land clearance</h3>
+              <p id="impactMechanism">Removal of native vegetation for human land use.</p>
+              
+              <div class="impact-section">
+                <h4>Affected ecosystems:</h4>
+                <ul id="impactEcosystems">
+                  <li>Forests</li>
+                  <li>Grasslands</li>
+                </ul>
+              </div>
+
+              <div class="impact-section">
+                <h4>Secondary effects:</h4>
+                <ul id="impactEffects">
+                  <li>Habitat loss</li>
+                  <li>Soil degradation</li>
+                  <li>Carbon release</li>
+                </ul>
+              </div>
+
+              <div class="decline-indicator">
+                <span class="decline-label">Vegetation decline level:</span>
+                <div class="decline-bar">
+                  <div class="decline-fill" id="declineFill" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

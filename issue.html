@@ -39,7 +39,7 @@
           <h1>Human activity is driving vegetation decline</h1>
           <p>
             South Auckland is experiencing a serious decline in vegetation as more
-            land is used for housing, roads, infrastructure, and farming.
+            land is used for housing, roads, infrastructure, and farming to accomodate the rising population.
           </p>
         </div>
       </section>
@@ -68,17 +68,48 @@
         </div>
         <div class="evidence-panel reveal">
           <article>
-            <span class="fact-number">30,264 ha</span>
-            <p>Auckland's urban area expansion between 1996 and 2018.</p>
+            <span class="fact-number">10%</span>
+            <p>Tree cover lost in South Auckland despite tree numbers increasing in northern suburbs.</p>
           </article>
           <article>
-            <span class="fact-number">90%</span>
-            <p>Approximate loss of Auckland's original wetland vegetation.</p>
+            <span class="fact-number">80%</span>
+            <p>Remaining native forest is in fragments less than 10 ha.</p>
           </article>
           <article>
             <span class="fact-number">120,000</span>
-            <p>More people expected to live in South Auckland over the next 30 years.</p>
+            <p>More people expected to live in South Auckland over the next 30 years, placing even more pressure on surrounding ecosystems.</p>
           </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading centered reveal">
+          <h2>Human Activity and Vegetation Decline</h2>
+          <p>Explore how vegetation has changed over time in South Auckland</p>
+        </div>
+
+        <div class="timeline-slider-container reveal">
+          <div class="landscape-panel" id="landscapePanel">
+            <img src="Images/Timeline/1985.png" alt="1985 landscape" class="timeline-image" id="timelineImage">
+          </div>
+
+          <div class="slider-controls">
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <p class="slider-instruction">Drag the slider to explore vegetation changes over time</p>
+
+            <input type="range" min="0" max="7" value="0" class="timeline-slider" id="timelineSlider">
+
+            <div class="year-info">
+              <div class="year-display">
+                <span class="year-label" id="yearLabel">1985</span>
+                <span class="vegetation-percent" id="vegetationPercent">90.0% vegetation</span>
+              </div>
+              <p class="year-description" id="yearDescription">Peak pastoral farming; early construction of the southern motorway.</p>
+            </div>
+          </div>
         </div>
       </section>
 
