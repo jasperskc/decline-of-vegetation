@@ -4,7 +4,6 @@
 
   gtag('config', 'G-S7NHVQVQ2V');
 
-
 const places = {
   drury: {
     title: "Drury",
@@ -205,3 +204,15 @@ interviewTabs.forEach((tab) => {
     document.getElementById(tabId).classList.add("active");
   });
 });
+
+ 
+// Load Footer
+fetch("footer.html")
+  .then((response) => response.text())
+  .then((html) => {
+    const footerPlaceholder = document.createElement("div");
+    footerPlaceholder.innerHTML = html;
+    document.body.appendChild(footerPlaceholder);
+  })
+  .catch((error) => console.error("Error loading footer:", error));
+ 
