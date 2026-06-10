@@ -1761,10 +1761,6 @@ figcaption {
     top: 10px;
   }
 
-  nav {
-    display: none;
-  }
-
   .hero {
     min-height: 980px;
   }
