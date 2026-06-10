@@ -66,8 +66,12 @@ const countObserver = new IntersectionObserver(
         const eased = 1 - Math.pow(1 - progress, 3);
         const current = Math.round(target * eased);
 
+        const hasPercent = number.textContent.includes("%");
         number.textContent =
           target >= 1000 ? current.toLocaleString("en-NZ") : current;
+        if (hasPercent) {
+          number.textContent += "%";
+        }
 
         if (progress < 1) {
           requestAnimationFrame(tick);
