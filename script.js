@@ -350,6 +350,29 @@ fetch("header.html")
     const headerPlaceholder = document.createElement("div");
     headerPlaceholder.innerHTML = html;
     document.body.prepend(headerPlaceholder);
+
+    // Mobile menu toggle
+    const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+    const mobileNav = document.querySelector(".mobile-nav");
+
+    if (mobileMenuToggle && mobileNav) {
+      mobileMenuToggle.addEventListener("click", () => {
+        mobileMenuToggle.classList.toggle("active");
+        mobileNav.classList.toggle("active");
+        mobileMenuToggle.setAttribute("aria-expanded", mobileMenuToggle.classList.contains("active"));
+      });
+    }
+
+    // Mobile dropdown toggle
+    const mobileDropdownToggle = document.querySelector(".mobile-dropdown-toggle");
+    const mobileDropdownMenu = document.querySelector(".mobile-dropdown-menu");
+
+    if (mobileDropdownToggle && mobileDropdownMenu) {
+      mobileDropdownToggle.addEventListener("click", (e) => {
+        e.preventDefault();
+        mobileDropdownMenu.classList.toggle("active");
+      });
+    }
   })
   .catch((error) => console.error("Error loading header:", error));
 

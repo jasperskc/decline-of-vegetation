@@ -80,6 +80,97 @@ a {
   border-radius: 6px;
 }
 
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.mobile-menu-toggle span {
+  width: 30px;
+  height: 3px;
+  background: var(--white);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.desktop-nav {
+  display: flex;
+}
+
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(18, 56, 43, 0.95);
+  backdrop-filter: blur(18px);
+  flex-direction: column;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.mobile-nav.active {
+  display: flex;
+}
+
+.mobile-nav a {
+  padding: 15px 0;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-nav a:last-child {
+  border-bottom: none;
+}
+
+.mobile-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-dropdown-toggle {
+  cursor: pointer;
+}
+
+.mobile-dropdown-menu {
+  display: none;
+  flex-direction: column;
+  padding-left: 20px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.mobile-dropdown-menu.active {
+  display: flex;
+}
+
+.mobile-dropdown-menu a {
+  font-size: 0.9rem;
+  padding: 12px 0;
+}
+
 nav {
   display: flex;
   gap: 4px;
@@ -1758,15 +1849,23 @@ figcaption {
 
 @media (max-width: 960px) {
   .site-header {
-    top: 10px;
+    top: 0;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .desktop-nav {
+    display: none;
   }
 
   .hero {
-    min-height: 980px;
+    min-height: 1100px;
   }
 
   .hero-content {
-    padding-bottom: 360px;
+    padding-bottom: 500px;
   }
 
   .hero-actions,
@@ -1787,8 +1886,29 @@ figcaption {
 
   .hero-stats {
     right: 22px;
-    bottom: 28px;
+    bottom: 120px;
     left: 22px;
+  }
+
+  .scroll-cue {
+    bottom: 20px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-card h3 {
+    font-size: 1rem;
+  }
+
+  .stat-detail {
+    font-size: 0.85rem;
   }
 
   .story-band {
