@@ -686,6 +686,18 @@ h3 {
   margin-bottom: 42px;
 }
 
+.section-heading.full-width {
+  width: min(1200px, 100%);
+}
+
+.section.compact {
+  padding: 20px max(22px, calc((100vw - 1120px) / 2));
+}
+
+.section.compact .section-heading {
+  margin-bottom: 10px;
+}
+
 .map-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
